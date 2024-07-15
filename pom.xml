@@ -20,6 +20,8 @@
     <module>ms-gateway</module>
     <module>ms-eureka</module>
     <module>ms-config</module>
+    <module>ms-customer-person</module>
+    <module>ms-account-transfer</module>
   </modules>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

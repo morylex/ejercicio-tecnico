@@ -8,16 +8,26 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ms-eureka" />
-        <module name="ms-gateway" />
         <module name="ms-config" />
+        <module name="ms-account-transfer" />
+        <module name="ms-gateway" />
+        <module name="ms-customer-person" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ms-customer" target="17" />
+      <module name="ms-transfer" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ms-account-transfer" options="-parameters" />
       <module name="ms-config" options="-parameters" />
+      <module name="ms-customer" options="-parameters" />
+      <module name="ms-customer-person" options="-parameters" />
       <module name="ms-eureka" options="-parameters" />
       <module name="ms-gateway" options="-parameters" />
+      <module name="ms-transfer" options="-parameters" />
     </option>
   </component>
 </project>
